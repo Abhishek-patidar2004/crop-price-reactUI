@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   // Option 2: Max & Min price check
   const handleCheckMaxMinPrice = () => {
-    navigate("/check-max-min-price");
+    navigate("/MaxMinPrice");
   };
 
   return (
