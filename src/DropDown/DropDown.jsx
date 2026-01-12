@@ -7,7 +7,6 @@ function DropDown() {
   const [district, setDistrict] = useState("");
   const [market, setMarket] = useState("");
   const [commodity, setCommodity] = useState("");
-  const [arrivalDate, setArrivalDate] = useState("");
 
   const [states, setStates] = useState([]);
   const [districts, setDistricts] = useState([]);
@@ -59,8 +58,7 @@ function DropDown() {
             state,
             district,
             market,
-            commodity,
-            arrivalDate
+            commodity
           }
         }
       );
@@ -98,12 +96,6 @@ function DropDown() {
           <option value="">Select Commodity</option>
           {commodities.map(c => <option key={c}>{c}</option>)}
         </select>
-
-        <input
-          type="date"
-          value={arrivalDate}
-          onChange={e => setArrivalDate(e.target.value)}
-        />
 
         <button type="submit">Submit</button>
       </form>

@@ -14,6 +14,11 @@ const Dashboard = () => {
     navigate("/MaxMinPrice");
   };
 
+  // option 3: Compare
+  const handleCompare = () =>{
+    navigate("/Compare");
+  }
+
   return (
     <div style={styles.container}>
       <h2 style={styles.heading}>Dashboard</h2>
@@ -29,6 +34,12 @@ const Dashboard = () => {
         <div style={styles.card} onClick={handleCheckMaxMinPrice}>
           <h3>Check Max & Min Price</h3>
           <p>View maximum and minimum price for a crop</p>
+        </div>
+
+        {/*option 3 */}
+        <div style={styles.card} onClick={handleCompare}>
+          <h3>Compare crop Price</h3>
+          <p>View Price Compare of Crop</p>
         </div>
       </div>
     </div>
